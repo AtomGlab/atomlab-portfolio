@@ -571,21 +571,21 @@ export default function Portfolio() {
                 // sobre mí
               </p>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F0E8D5", fontWeight: 700, marginBottom: 24, lineHeight: 1.1 }}>
-                No solo un<br />portfolio de frontend.
+                Hola, soy <br /> <span style={{ color: "#C9A84C" }}>Amin</span>
               </h2>
               <p style={{ fontSize: 15, color: "#706050", lineHeight: 1.9, marginBottom: 24 }}>
-                Construyendo proyectos con arquitectura cloud real en AWS. Cada proyecto es una pieza de infraestructura funcional — serverless, CI/CD, IaC, observabilidad.
+                Estoy construyendo proyectos con arquitectura cloud real en AWS. Cada proyecto es una pieza de infraestructura funcional — serverless, CI/CD, IaC, observabilidad.
               </p>
               <p style={{ fontSize: 15, color: "#706050", lineHeight: 1.9 }}>
-                El objetivo: demostrar mentalidad de <span style={{ color: "#C9A84C" }}>ingeniero cloud junior</span>, no de desarrollador frontend con curiosidad por la nube.
+                El objetivo:  mejorar mis habilidades en el <span style={{ color: "#C9A84C" }}>Cloud Engineering</span> , y poder aportar valor a los proyectos en los que trabajo.
               </p>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
               {[
                 { val: "3", label: "Proyectos cloud", color: "#C9A84C" },
                 { val: "8+", label: "Servicios AWS", color: "#3B7A57" },
-                { val: "IaC", label: "Todo con Terraform", color: "#2B5797" },
-                { val: "SAA", label: "Cert en progreso", color: "#FF9900" },
+                { val: "Infrastructure as Code", label: "Todo con Terraform", color: "#2B5797" },
+                { val: " AWS Solutions Architect", label: "Cert en progreso", color: "#FF9900" },
               ].map((stat) => (
                 <div key={stat.label} style={{
                   background: "#0C0B08", border: "1px solid #1E1C18",
@@ -619,7 +619,7 @@ export default function Portfolio() {
           ◈ disponible para oportunidades
         </p>
         <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(28px, 4vw, 52px)", color: "#F0E8D5", fontWeight: 700, marginBottom: 32, letterSpacing: "-0.01em" }}>
-          ¿Hablamos?
+          Contacto
         </h2>
         <div style={{ display: "flex", justifyContent: "center", gap: 20, flexWrap: "wrap" }}>
           <a href="mailto:selterkrey@gmail.com" style={{
