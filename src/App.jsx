@@ -37,8 +37,8 @@ const EXPERIENCE = [
     company: "Deloitte",
     dates: "2026",
     description:
-      "Software development experience in a professional enterprise environment, working with SAP ABAP and development workflows.",
-    tags: ["SAP", "ABAP"],
+      "Worked as an ABAP Developer within Deloitte's enterprise technology environment, contributing to SAP development projects for major clients including Santander and Volkswagen. Gained hands-on experience with SAP ABAP, debugging, testing, development workflows and collaborative work in a professional consulting environment.",
+    tags: ["SAP", "ABAP", "Enterprise", "Deloitte"],
   },
 ];
 
@@ -48,14 +48,15 @@ const EDUCATION = [
     school: "University of Winchester",
     dates: "2026 – 2027",
     description:
-      "Top-up degree focused on software development, systems engineering and modern computing technologies.",
+      "Top-up degree focused on cloud computing, cloud-based application development and software engineering.",
   },
+
   {
     title: "Higher Technician Diploma in Web Application Development (DAW)",
-    school: "", // TODO: add your school
-    dates: "", // TODO: add the dates
+    school: "Escola del Treball", 
+    dates: "2024-2026", 
     description:
-      "Two-year higher vocational qualification covering front-end and back-end web development, databases and application deployment.",
+      "Two-year higher vocational qualification covering front-end and back-end web development, databases, APIs and application deployment.",
   },
 ];
 
@@ -105,7 +106,7 @@ const SKILLS = [
   {
     category: "Development",
     icon: FiCode,
-    items: ["Python", "JavaScript", "React", "Node.js", "REST APIs", "SQL"],
+    items: ["Java", "C+", "JavaScript", "React", "Node.js", "REST APIs", "SQL", "MongoDB"],
   },
   {
     category: "Engineering",
@@ -137,7 +138,7 @@ function Globe() {
       return v > 0.45 && Math.abs(lat) < 1.25;
     };
 
-    // Points spread evenly over the sphere (Fibonacci lattice)
+  
     const N = 2600;
     const golden = Math.PI * (3 - Math.sqrt(5));
     const points = Array.from({ length: N }, (_, i) => {
@@ -368,10 +369,10 @@ export default function App() {
           <div className="hero__text">
             <p className="eyebrow">Cloud Portfolio</p>
             <h1 className="hero__title">Hi, I'm Amin</h1>
-            <p className="hero__role">Software Engineer · Cloud &amp; DevOps</p>
+            <p className="hero__role">Cloud Engineer · Cloud &amp; DevOps</p>
             <p className="hero__lead">
               Software Engineering student at the University of Winchester, focused on cloud
-              computing, infrastructure and backend development. My main focus is AWS: serverless
+              computing and infrastructure. My main focus is AWS: serverless
               architectures, Infrastructure as Code, automation, security and observability, with
               the goal of developing into a Cloud Engineer.
             </p>
@@ -404,7 +405,7 @@ export default function App() {
       {/* Experience & Education */}
       <section id="experience" className="section">
         <div className="container">
-          <SectionHeader number="01" label="Background" title="Experience & Education" />
+          <SectionHeader title="Experience & Education" />
 
           <h3 className="subhead">Professional experience</h3>
           <div className="stack">
@@ -438,7 +439,7 @@ export default function App() {
       {/* Projects */}
       <section id="projects" className="section">
         <div className="container">
-          <SectionHeader number="02" label="Projects" title="My projects" />
+          <SectionHeader title="My projects" />
           <div className="projects">
             {PROJECTS.map((p) => (
               <ProjectCard key={p.title} project={p} />
@@ -450,7 +451,7 @@ export default function App() {
       {/* Certifications */}
       <section id="certifications" className="section">
         <div className="container">
-          <SectionHeader number="03" label="Certifications" title="Certifications" />
+          <SectionHeader title="Certifications" />
           <div className="certs">
             {CERTIFICATIONS.map((c) => (
               <CertCard key={c.name} cert={c} />
@@ -462,7 +463,7 @@ export default function App() {
       {/* Skills */}
       <section id="skills" className="section">
         <div className="container">
-          <SectionHeader number="04" label="Technical skills" title="Technologies" />
+          <SectionHeader title="Technologies" />
           <div className="skills">
             {SKILLS.map(({ category, icon: Icon, items }) => (
               <div key={category} className="card">
@@ -478,7 +479,7 @@ export default function App() {
       {/* Contact */}
       <section id="contact" className="section">
         <div className="container split">
-          <SectionHeader number="05" label="Contact" title="Let’s connect." />
+          <SectionHeader title="Let’s connect." />
           <div className="split__body split__body--rule">
             <p>
               For professional opportunities, collaborations or technical discussions, feel free
@@ -502,7 +503,7 @@ export default function App() {
       <footer className="footer">
         <div className="container footer__inner">
           <p>© {new Date().getFullYear()} Amin Bakkouh</p>
-          <p>Software Engineering · Cloud · AWS</p>
+          <p>Cloud Engineering · Cloud · AWS</p>
         </div>
       </footer>
     </div>
