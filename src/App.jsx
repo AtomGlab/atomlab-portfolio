@@ -264,7 +264,6 @@ function SectionHeader({ number, label, title }) {
     <div className="section-header">
       <p className="section-label">
         <span>{number}</span>
-        <span className="section-label__dash">—</span>
         <span>{label}</span>
       </p>
       <h2 className="section-title">{title}</h2>
